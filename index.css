@@ -406,6 +406,7 @@ span {
 
 .linkedin-icon {
   width: 35px; /* Adjust the width of the LinkedIn icon */
+  margin-right: 3px;
 }
 
 .contact-box div {
@@ -421,6 +422,10 @@ span {
 .contact-box a:hover {
   color: rgba(158, 33, 247, 0.85);
   transition: 0.2s;
+}
+
+.contact-box i {
+  color: #fff;
 }
 
 footer {
@@ -455,6 +460,7 @@ footer {
   margin: 0%;
   padding: 0%;
   transition: font-size 0.3s; /* Add transition for smooth animation */
+  color: #fff;
 }
 
 .project-links i:hover {
