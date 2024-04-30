@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="mediascreens.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Shojumaru&family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Zaid Hassan</h1>
+      <div class="nav-buttons">
+        <button><a href="#intro">Home</a></button>
+        <button><a href="#skills">Skills</a></button>
+        <button><a href="#projects">Projects</a></button>
+        <button><a href="#contact">Contact</a></button>
+        <button></button>
+      </div>
+    </div>
+    <div class="header-small">
+      <h1>Zaid Hassan</h1>
+      <div class="menu-icon" id="menu-icon" onclick="toggleHeader()">
+        <i class="material-icons">menu</i>
+      </div>
+      <nav id="nav-small">
+        <button><a href="#intro">Home</a></button>
+        <button><a href="#skills">Skills</a></button>
+        <button><a href="#projects">Projects</a></button>
+        <button><a href="#contact">Contact</a></button>
+      </nav>
+    </div>
+    <!-- <div class="header-small">
+      <h1><span>Zaid Hassan</span></h1>
+      <div class="menu-icon" id="menu-icon" onclick="toggleHeader()">
+        <i class="material-icons">menu</i>
+      </div>
+    </div>
+    <nav class="nav-small" id="nav-small">
+      <button><a href="#intro">About</a></button>
+      <button><a href="#skills">Skills</a></button>
+      <button><a href="#projects">Projects</a></button>
+      <button><a href="#contact">Contact</a></button>
+    </nav> -->
+
+    <div id="intro" class="intro">
+      <div>
+        <h1>Hello 👋</h1>
+        <p>
+          My name is <span>Zaid</span> and I am a passionate
+          <span>Junior Software Engineer</span> and a self-proclaimed pancake
+          chef.
+        </p>
+        <p id="typewriter">A Full Stack Software Developer.</p>
+        <button onclick="window.open('assets/Zaid Hassan copy.pdf')">
+          Download CV
+        </button>
+      </div>
+      <div>
+        <img
+          class="coding-guy"
+          src="Images/coding guy.jpg"
+          alt="animated picture of a guy on a computer"
+        />
+      </div>
+    </div>
+    <!-- <div class="about" id="about">
+      <h1>About me</h1>
+      <p>
+        A passionate junior software developer looking to have a great positive
+        impact in this field where possibilities are endless, with a mindset of
+        growth and determination I have found something that I can do to help
+        better the world with tech which gives me such an immense feeling of
+        excitement.
+      </p>
+    </div> -->
+    <div id="skills" class="skills">
+      <h1>My Tools 🛠️</h1>
+      <ul>
+        <div>
+          <li>HTML <i class="material-icons">verified</i></li>
+          <img src="Images/hmtl icon copy.png" alt="html icon" />
+          <li>CSS <i class="material-icons">verified</i></li>
+          <img src="Images/file-type-css copy.svg" alt="css icon" />
+          <li>JavaScript <i class="material-icons">verified</i></li>
+          <img src="Images/javascript-js copy.svg" alt="javascript icon" />
+          <li>Jest <i class="material-icons">verified</i></li>
+          <img src="Images/jest-js-icon copy.webp" alt="jest icon" />
+        </div>
+        <div>
+          <li>Typescript <i class="material-icons">verified</i></li>
+          <img src="Images/typescript-icon copy.svg" alt="typescript icon" />
+          <li>Node.js <i class="material-icons">verified</i></li>
+          <img src="Images/node-js copy.svg" alt="node.js icon" />
+          <li>PostgreSQL <i class="material-icons">verified</i></li>
+          <img src="Images/postgresql.248x256 copy.png" alt="postgresql icon" />
+          <li>NPM <i class="material-icons">verified</i></li>
+          <img src="Images/npm.svg" alt="npm icon" />
+        </div>
+        <div>
+          <li>React <i class="material-icons">verified</i></li>
+          <img src="Images/react copy.svg" alt="react icon" />
+          <li>React Native <i class="material-icons">verified</i></li>
+          <img src="Images/react copy.svg" alt="react-natice icon" />
+          <li>Express.js <i class="material-icons">verified</i></li>
+          <img
+            src="Images/pngfind.com-pc-master-race-png-1363736 copy.png"
+            alt="express.js icon"
+          />
+          <li>Git <i class="material-icons">verified</i></li>
+          <img src="Images/image copy.png" alt="git icon" />
+        </div>
+      </ul>
+    </div>
+
+    <!-- <div class="projects-header">
+        <img src="Images/projects copy.jpg" alt="" />
+        <div>
+          <h1>Projects</h1>
+          <p>
+            Check out some of my recent <span>projects</span>, to see all of my
+            projects you can have a look <br />
+            at my github
+          </p>
+        </div>
+      </div> -->
+    <div>
+      <h1 class="projects-title" id="projects">Projects</h1>
+      <div class="projects-container">
+        <button class="prev" onclick="changeSlide(-1)">
+          <i class="material-icons" style="font-size: 70px">chevron_left</i>
+        </button>
+        <div class="projects">
+          <div class="project" id="project1">
+            <img
+              src="Images/scoop hp.png"
+              alt="Image of my single-page web app showcasing articles on various topics"
+            />
+            <h2>Scooop</h2>
+            <div class="tools-used">
+              <p>HTML</p>``
+              <p>CSS</p>
+              <p>React</p>
+              <p>Node.Js</p>
+              <p>JavaScript</p>
+              <p>Axios</p>
+            </div>
+            <p>
+              A React-based single-page web app showcasing articles on various
+              topics.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/ziani96/scoop"
+                class="github-icon"
+                target="_blank"
+                ><img src="Images/github-11-xxl copy.png" alt="github icon"
+              /></a>
+              <a href="https://scooop.netlify.app/" target="_blank"
+                ><i class="material-icons">public</i></a
+              >
+            </div>
+          </div>
+          <div class="project" id="project2">
+            <img src="Images/backendapi.png" alt="Image of my api" />
+            <h2>News API</h2>
+            <div class="tools-used">
+              <p>JavaScript</p>
+              <p>Node.Js</p>
+              <p>Express.Js</p>
+              <p>PostgreSQL</p>
+            </div>
+            <p>
+              Developed a real-time News API using JavaScript with Node.js and
+              Express.js for efficient RESTful API development, integrated with
+              PostgreSQL for data storage.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/ziani96/news"
+                class="github-icon"
+                target="_blank"
+                ><img src="Images/github-11-xxl copy.png" alt="github icon"
+              /></a>
+              <a href="https://news-1-ejzq.onrender.com/api" target="_blank"
+                ><i class="material-icons">public</i></a
+              >
+            </div>
+          </div>
+          <div class="project" id="project3">
+            <img
+              src="Images/coffeeconnoisseur.png"
+              alt="Images my coffee connoisseur mobile app"
+            />
+            <h2>Coffee connoisseur app</h2>
+            <div class="tools-used">
+              <p>Typescript</p>
+              <p>React Native</p>
+              <p>Expo</p>
+              <p>Node.Js</p>
+              <p>Tailwind</p>
+              <p>Axios</p>
+            </div>
+            <p>
+              A React Expo mobile app that helps users find the best nearby
+              coffee shops recommended by members in various cities. Powered by
+              React Native, Expo, Typescript, Axios, Node.js, and Tailwind,
+              utilizing a backend API built using MongoDB
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/Status-200-Coffee/Coffee-Connoisseur-app"
+                target="_blank"
+                class="github-icon"
+                ><img src="Images/github-11-xxl copy.png" alt="github icon"
+              /></a>
+              <!-- <a href=""><i class="material-icons">public</i></a> -->
+            </div>
+          </div>
+        </div>
+        <button class="next" onclick="changeSlide(1)">
+          <i class="material-icons" style="font-size: 70px">chevron_right</i>
+        </button>
+        <div class="next-prev-smaller-screen">
+          <button class="prev-small" onclick="changeSlide(-1)">
+            <i class="material-icons" style="font-size: 70px">chevron_left</i>
+          </button>
+          <button class="next-small" onclick="changeSlide(1)">
+            <i class="material-icons" style="font-size: 70px">chevron_right</i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="contact">
+      <h1>Get in <span>Touch</span></h1>
+      <div class="contact-box">
+        <div>
+          <i class="material-icons" style="font-size: 30px; margin: auto"
+            >email</i
+          >
+          <a
+            href="mailto:ziani960@hotmail.com"
+            target="_blank"
+            style="font-size: 30px; margin-top: 10px; text-decoration: none"
+            >ziani960@hotmail.com</a
+          >
+        </div>
+        <div>
+          <img
+            src="images/linkedin-square-icon copy.webp"
+            alt="LinkedIn icon"
+            class="linkedin-icon"
+          />
+          <a
+            href="https://www.linkedin.com/in/zaid-h-b12b421ab/?trk=opento_sprofile_details"
+            target="_blank"
+            style="margin-top: 7px; font-size: 30px; text-decoration: none"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  <footer>Copyright © 2024 Zaid Hassan.</footer>
+</html>
