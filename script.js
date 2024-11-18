@@ -1,13 +1,3 @@
-function showNav() {
-  const nav = document.getElementById("navItems");
-  nav.style.display = "block";
-}
-
-function hideNav() {
-  const nav = document.getElementById("navItems");
-  nav.style.display = "none";
-}
-
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -46,16 +36,7 @@ function showSlide(n) {
   slides[slideIndex].classList.add("active");
 }
 
-// function toggleHeader() {
-//   let nav = document.getElementById("nav-small");
-//   if (nav.style.display === "" || nav.style.display === "none") {
-//     nav.style.display = "block";
-//   } else {
-//     nav.style.display = "none";
-//   }
-// }
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const menuIcon = document.getElementById("menu-icon");
   const nav = document.getElementById("nav-small");
 
@@ -63,17 +44,14 @@ document.addEventListener("DOMContentLoaded", function() {
     nav.classList.toggle("show");
   }
 
-  menuIcon.addEventListener("click", function() {
+  menuIcon.addEventListener("click", function () {
     toggleHeader();
   });
 
   const menuButtons = document.querySelectorAll("#nav-small a");
-  menuButtons.forEach(function(button) {
-    button.addEventListener("click", function() {
+  menuButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
       toggleHeader(); // Close the navigation menu
     });
   });
 });
-
-
-

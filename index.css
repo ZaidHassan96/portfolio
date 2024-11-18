@@ -30,8 +30,9 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(158, 33, 247, 0.85);
-  border-radius: 30px;
+  border-radius: 1rem;
   width: 100%;
+  height: 8rem;
   padding: 10px;
   margin: auto;
   position: fixed;
@@ -48,10 +49,12 @@
   font-weight: 400;
   font-style: normal;
   color: rgba(158, 33, 247, 0.85);
+  background-color: transparent;
 }
 
 .nav-buttons {
   margin-right: 20px;
+  background-color: transparent;
 }
 
 .nav-buttons button {
@@ -64,6 +67,7 @@
 
 .nav-buttons a {
   text-decoration: none;
+  background-color: transparent;
 }
 
 .nav-buttons a:hover {
@@ -155,12 +159,11 @@
   border-bottom: 2px solid rgba(173, 75, 233, 0.85);
   border-radius: 20px;
   margin-bottom: 10px;
-  background-color: #0e021f;
+  /* background-color: #0e021f; */
 }
 
 .skills img {
   width: 30px;
-
   display: block; /* Ensures the margin:auto works */
   margin: 0 auto 5px; /* Centers the image horizontally */
 }
@@ -236,15 +239,6 @@
   font-size: 23px;
 }
 
-.projects div {
-  /* margin-top: 3em;
-  width: 30%;
-
-
-  border: 1px solid grey;
-  border-radius: 10px;
-  margin-right: 10px; */
-}
 .project {
   display: none;
 }
@@ -260,7 +254,7 @@
   width: 75%;
   margin: auto;
   padding: 20px;
-  background: linear-gradient(to bottom, #360644, #150327);
+  background: linear-gradient(to bottom, #000001, #360644);
   border-radius: 15px;
 }
 
@@ -272,18 +266,21 @@
   font-size: 35px;
   margin-bottom: 0px;
   text-align: center;
+  background-color: transparent;
 }
 
 .active p {
   font-size: 20px;
   text-align: center;
   margin-bottom: 10px;
+  background-color: transparent;
 }
 
 .tools-used {
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
+  background-color: transparent;
 }
 
 .tools-used p {
@@ -337,8 +334,8 @@
   display: block;
 }
 
-body {
-  background-color: #02011e;
+* {
+  background-color: #000007;
 }
 
 /* .animated-background {
@@ -453,6 +450,15 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   width: 80%;
+  background-color: transparent;
+}
+
+.project-links a {
+  background-color: transparent;
+}
+
+.project-links img {
+  background-color: transparent;
 }
 
 .project-links i {
@@ -461,6 +467,7 @@ footer {
   padding: 0%;
   transition: font-size 0.3s; /* Add transition for smooth animation */
   color: #fff;
+  background-color: transparent;
 }
 
 .project-links i:hover {

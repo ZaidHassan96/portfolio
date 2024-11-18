@@ -17,7 +17,7 @@
     top: 0;
     width: 100%;
     height: auto;
-    background-color: #030229;
+    background-color: #030229ef;
     border-bottom: 3px solid rgba(158, 33, 247, 0.85);
   }
 
@@ -27,38 +27,44 @@
     font-weight: 400;
     font-style: normal;
     color: rgba(158, 33, 247, 0.85);
+    background-color: transparent;
   }
   .menu-icon {
     text-align: right;
     display: block;
     margin-bottom: 5px;
+    background-color: transparent;
+  }
+
+  .material-icon {
+    background-color: transparent;
   }
 
   .menu-icon i {
     font-size: 60px;
     margin-top: 0%;
     color: rgba(158, 33, 247, 0.85);
+    background-color: transparent;
   }
 
   #nav-small {
-    display: none;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: auto; 
+    height: auto;
     position: absolute;
-    top: 81.5px; 
-    left: 0; 
-    background-color: #0c0856;
-    z-index: 999; 
+    top: 81.5px;
+    left: 0;
+    background-color: #030229ef;
+    z-index: 999;
     height: 0;
     overflow: hidden;
     transition: height 0.3s ease-out;
-    padding: 5px;
+    padding-left: 1rem;
   }
 
   #nav-small.show {
-    display: flex;
-    flex-direction: column;
-    height: 170px;
+    height: 150px;
   }
 
   #nav-small button {
@@ -73,6 +79,7 @@
 
   #nav-small button a {
     text-decoration: none;
+    background-color: transparent;
   }
 
   .nav-small.expanded {
